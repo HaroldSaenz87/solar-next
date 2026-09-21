@@ -6,9 +6,8 @@ export const DATA = {
   name: 'Harold Saenz',
   firstLine: 'Harold',
   secondLine: 'Saenz',
-  intro: 'I\u2019m an aspiring Software Engineer and Computer Science Student at UCF that is endlessly curious about how things work under the hood. From websites to mobile apps, I love building things that are clean, and thoughtfully crafted.',
+  intro: 'I don\u2019t just want it to work, I want to know why. UCF computer science student focused on websites, mobile apps, AI and machine learning.',
   email: 'joshu4nick19@gmail.com',
-  /* Replace the GitHub URL with your real profile. Add more entries (LinkedIn, etc.) the same way. */
   socials: [{ label: 'GitHub', href: 'https://github.com/HaroldSaenz87' }] as Social[]
 };
 
@@ -54,7 +53,7 @@ export interface Job {
 
 export const JOBS: Job[] = [
   {
-    role: 'Software engineering intern',
+    role: 'Software Engineering Intern',
     company: 'Global Radio Outreach (GRO)',
     place: 'Remote',
     period: 'May 2026 \u2013 Present',
@@ -68,7 +67,7 @@ export const JOBS: Job[] = [
     stack: ['Next.js', 'NestJS', 'Turborepo', 'Docker', 'Kubernetes', 'NGINX', 'Tailwind CSS']
   },
   {
-    role: 'Front-end developer intern',
+    role: 'Frontend Developer Intern',
     company: 'IPMD',
     period: 'Aug 2026 \u2013 Present',
     points: [
@@ -106,7 +105,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'LesChic',
-    kind: 'Class project with a team of 5, April 2026',
+    kind: 'Team project, April 2026',
     hue: 320,
     desc: 'A luxury wardrobe manager. I built cinematic interactions with GSAP ScrollTriggers and SVG masking, led an optimistic UI strategy so large asset libraries feel instant, and wrote a recursive transform that normalizes color metadata for faster, more accurate filters.',
     tags: ['React', 'TypeScript', 'GSAP', 'Tailwind CSS', 'Node.js', 'MongoDB'],

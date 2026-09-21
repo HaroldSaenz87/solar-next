@@ -37,7 +37,7 @@ export default function Hero({ ready }: { ready: boolean }) {
             <Line text={DATA.firstLine} />
             <Line text={DATA.secondLine} />
           </h1>
-          <p className="h-in mt-7 max-w-md text-lg md:text-xl leading-relaxed text-slate-200">{DATA.intro}</p>
+          <p className="h-in mt-7 max-w-xl text-lg md:text-xl leading-relaxed text-slate-200">{DATA.intro}</p>
           <div className="h-in mt-9 flex flex-wrap gap-3">
             <a href="#projects" onClick={goTo('projects')} className="btn btn-primary">See my work</a>
             <a href="#contact" onClick={goTo('contact')} className="btn btn-ghost">Get in touch</a>
