@@ -4,9 +4,9 @@ export interface Social { label: string; href: string }
 
 export const DATA = {
   name: 'Harold Saenz',
-  firstLine: 'Harold',
-  secondLine: 'Saenz',
-  intro: 'I don\u2019t just want it to work, I want to know why. UCF computer science student focused on websites, mobile apps, AI and machine learning.',
+  firstLine: 'Curious',
+  secondLine: 'by design',
+  intro: 'Aspiring software engineer and UCF computer science student focused on websites, mobile apps, machine learning and AI. I want to know how it all works.',
   email: 'joshu4nick19@gmail.com',
   socials: [{ label: 'GitHub', href: 'https://github.com/HaroldSaenz87' }] as Social[]
 };

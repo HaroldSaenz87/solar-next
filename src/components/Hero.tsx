@@ -1,15 +1,24 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { Fragment, useEffect, useRef } from 'react';
 import { gsap, goTo } from '@/lib/motion';
 import { DATA } from '@/data';
 
-/* One line of the big title, split into letters so GSAP can stagger them. */
+/* One line of the big title, split into words and letters so GSAP can stagger the letters.
+   Words stay whole; a long line can only wrap between words. */
 function Line({ text }: { text: string }) {
+  const words = text.split(' ');
   return (
     <span className="h-line h-hide block overflow-hidden pt-[0.06em] -mt-[0.06em] pb-[0.22em] -mb-[0.14em]">
-      {Array.from(text).map((c, i) => (
-        <span key={i} className="h-char inline-block">{c}</span>
+      {words.map((word, w) => (
+        <Fragment key={w}>
+          {w > 0 && ' '}
+          <span className="inline-block whitespace-nowrap">
+            {Array.from(word).map((c, i) => (
+              <span key={i} className="h-char inline-block">{c}</span>
+            ))}
+          </span>
+        </Fragment>
       ))}
     </span>
   );
@@ -33,7 +42,7 @@ export default function Hero({ ready }: { ready: boolean }) {
     <section id="home" ref={root} className="relative min-h-[100svh] px-6 md:px-16 flex items-center">
       <div className="w-full max-w-7xl mx-auto">
         <div className="md:max-w-[56%] tshadow">
-          <h1 className="hero-title text-white" aria-label={DATA.name}>
+          <h1 className="hero-title text-white" aria-label={`${DATA.firstLine} ${DATA.secondLine}`}>
             <Line text={DATA.firstLine} />
             <Line text={DATA.secondLine} />
           </h1>
