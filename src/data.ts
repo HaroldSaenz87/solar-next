@@ -8,7 +8,10 @@ export const DATA = {
   secondLine: 'by design',
   intro: 'Aspiring software engineer and UCF computer science student focused on websites, mobile apps, machine learning and AI. I want to know how it all works.',
   email: 'joshu4nick19@gmail.com',
-  socials: [{ label: 'GitHub', href: 'https://github.com/HaroldSaenz87' }] as Social[]
+  socials: [
+    { label: 'GitHub', href: 'https://github.com/HaroldSaenz87' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/YOUR-HANDLE/' }
+  ] as Social[]
 };
 
 /* Each section flies the camera to a planet. */

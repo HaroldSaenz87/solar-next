@@ -3,6 +3,7 @@
 import { Fragment, useEffect, useRef } from 'react';
 import { gsap, goTo } from '@/lib/motion';
 import { DATA } from '@/data';
+import ResumeButton from './ResumeButton';
 
 /* One line of the big title, split into words and letters so GSAP can stagger the letters.
    Words stay whole; a long line can only wrap between words. */
@@ -47,8 +48,9 @@ export default function Hero({ ready }: { ready: boolean }) {
             <Line text={DATA.secondLine} />
           </h1>
           <p className="h-in mt-7 max-w-xl text-lg md:text-xl leading-relaxed text-slate-200">{DATA.intro}</p>
-          <div className="h-in mt-9 flex flex-wrap gap-3">
+          <div className="h-in mt-9 flex flex-wrap items-center gap-3">
             <a href="#projects" onClick={goTo('projects')} className="btn btn-primary">See my work</a>
+            <ResumeButton />
             <a href="#contact" onClick={goTo('contact')} className="btn btn-ghost">Get in touch</a>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { DATA } from '@/data';
 import { gsap } from '@/lib/motion';
 import { useReveal } from '@/hooks/useReveal';
 import Heading from './Heading';
-import Ext from './Ext';
+import SocialLink from './SocialLink';
 
 type FormState = { name: string; email: string; message: string };
 
@@ -94,10 +94,10 @@ export default function Contact() {
               </p>
             )}
 
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-white/10 pt-6 text-sm">
-              <span className="text-slate-400">Find me on</span>
-              {DATA.socials.map((s) => (
-                <Ext key={s.label} href={s.href} className="text-slate-100 underline underline-offset-4 decoration-1 decoration-white/30 hover:decoration-white">{s.label}</Ext>
+            <div className="mt-8 flex flex-wrap items-center gap-3 border-t border-white/10 pt-6 text-sm">
+              <span className="mr-1 text-slate-400">Find me on</span>
+              {DATA.socials.filter((s) => s.href).map((s) => (
+                <SocialLink key={s.label} label={s.label} href={s.href} />
               ))}
             </div>
           </div>
