@@ -38,7 +38,7 @@ export const SECTIONS: Section[] = [
 export interface SkillGroup { title: string; items: string[] }
 
 export const SKILLS: SkillGroup[] = [
-  { title: 'Languages',                items: ['Java', 'C', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'HTML/CSS'] },
+  { title: 'Languages',                items: ['Java', 'C', 'Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'HTML/CSS'] },
   { title: 'Frameworks and libraries', items: ['React', 'React Native', 'Next.js', 'NestJS', 'Node.js', 'Express', 'Zustand', 'GSAP', 'Tailwind CSS'] },
   { title: 'Infrastructure and DevOps', items: ['Docker', 'Kubernetes', 'NGINX', 'Turborepo', 'Git', 'GitHub'] },
   { title: 'Databases and tools',      items: ['PostgreSQL', 'MongoDB', 'MySQL', 'REST APIs', 'Expo'] }
@@ -75,11 +75,12 @@ export const JOBS: Job[] = [
     period: 'Aug 2026 \u2013 Present',
     points: [
       'Supporting front-end development for IPMD\u2019s emotion-AI products, including EchoAI, Emotion Sphere, FineArts and the XR Virtual Gallery. These platforms are built to support people with intellectual disabilities.',
+      'Customizing the frontend of OpenMRS, an open-source medical record system, to match the company\u2019s design for a digital hospital.',
       'Building user-facing features and improving UI/UX on production products used by real users.',
       'Integrating APIs and contributing to the stability and scalability of the platforms.',
       'Working directly with senior engineers and leadership in a fast-paced team.'
     ],
-    stack: []
+    stack: ['OpenMRS']
   },
 ];
 

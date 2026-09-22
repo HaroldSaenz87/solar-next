@@ -12,13 +12,13 @@ const description = `${DATA.name} is a full-stack developer and computer science
 export const metadata: Metadata = {
   title: `${DATA.name} | Portfolio`,
   description,
+  metadataBase: new URL('https://harold-saenz.vercel.app'),
   openGraph: {
     title: `${DATA.name} | Portfolio`,
     description,
     type: 'website'
   }
-  /* After you deploy, add:  metadataBase: new URL('https://your-domain.com')
-     so link previews use absolute URLs. */
+  
 };
 
 export const viewport: Viewport = {

@@ -2,7 +2,7 @@ import type { IconType } from 'react-icons';
 import {
   SiC, SiDocker, SiExpo, SiExpress, SiGit, SiGithub, SiGreensock, SiHtml5, SiJavascript,
   SiKubernetes, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiNodedotjs, SiPhp,
-  SiPostgresql, SiReact, SiTailwindcss, SiTurborepo, SiTypescript
+  SiPostgresql, SiPython, SiReact, SiTailwindcss, SiTurborepo, SiTypescript
 } from 'react-icons/si';
 import { FaDatabase, FaJava } from 'react-icons/fa';
 import { TbApi, TbBrandCss3, TbBrandReactNative, TbPackage } from 'react-icons/tb';
@@ -21,6 +21,7 @@ export const SKILL_ICONS: Record<string, IconSpec[]> = {
   // Languages
   'Java':        [{ icon: FaJava,       color: '#f89820' }],
   'C':           [{ icon: SiC,          color: '#a8b9cc' }],
+  'Python':      [{ icon: SiPython,     color: '#3776ab' }],
   'JavaScript':  [{ icon: SiJavascript, color: '#f7df1e' }],
   'TypeScript':  [{ icon: SiTypescript, color: '#3178c6' }],
   'PHP':         [{ icon: SiPhp,        color: '#777bb4' }],

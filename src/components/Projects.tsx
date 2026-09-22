@@ -93,7 +93,7 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="relative min-h-[100svh] px-6 md:px-16 py-28">
       <div className="w-full max-w-7xl mx-auto">
-        <Heading title="Selected projects" blurb="Personal and class projects, from a mobile app to a full-stack LAMP application." />
+        <Heading title="Selected projects" blurb="A few things I've built, end to end." />
         <div className="grid gap-5 md:grid-cols-2">
           {PROJECTS.map((p, i) => <ProjectCard key={p.title} p={p} i={i} />)}
         </div>
