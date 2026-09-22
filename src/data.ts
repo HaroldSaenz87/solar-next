@@ -10,7 +10,7 @@ export const DATA = {
   email: 'joshu4nick19@gmail.com',
   socials: [
     { label: 'GitHub', href: 'https://github.com/HaroldSaenz87' },
-    { label: 'LinkedIn', href: 'www.linkedin.com/in/harold-saenz-29250517a' }
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/harold-saenz-29250517a/' }
   ] as Social[]
 };
 
