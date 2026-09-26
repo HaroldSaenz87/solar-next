@@ -74,13 +74,12 @@ export const JOBS: Job[] = [
     company: 'IPMD',
     period: 'Aug 2026 \u2013 Present',
     points: [
-      'Supporting front-end development for IPMD\u2019s emotion-AI products, including EchoAI, Emotion Sphere, FineArts and the XR Virtual Gallery. These platforms are built to support people with intellectual disabilities.',
-      'Customizing the frontend of OpenMRS, an open-source medical record system, to match the company\u2019s design for a digital hospital.',
-      'Building user-facing features and improving UI/UX on production products used by real users.',
-      'Integrating APIs and contributing to the stability and scalability of the platforms.',
-      'Working directly with senior engineers and leadership in a fast-paced team.'
+      'Frontend developer on IPMD\u2019s Digital Hospital team, building clinician-facing features on OpenMRS for a digital therapy platform that supports people with developmental disorders and intellectual disabilities.',
+      'Built the Digital Treatment Reports workflow, bringing session, activity and home-assignment data together into standardized reports with draft/finalize states and PDF export.',
+      'Developed interfaces for assigning therapeutic activities and home programs and tracking their completion.',
+      'Worked with backend and product teammates to integrate with OpenMRS data models.'
     ],
-    stack: ['OpenMRS']
+    stack: ['OpenMRS', 'React', 'TypeScript']
   },
 ];
 
